@@ -1,0 +1,119 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+  margin-right: 2rem;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+  color: #007bff;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon svg {
+  width: 100%;
+  height: 100%;
+  color: #007bff;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon svg {
+  color: #0056b3;
+  transform: rotate(-10deg);
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.logo:hover .logo-text {
+  background: linear-gradient(45deg, #0056b3, #0097a7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .logo-icon {
+    width: 36px;
+    height: 36px;
+  }
+  
+  .logo-text {
+    font-size: 1.6rem;
+  }
+}
+
+/* Medium screens (992px to 1199px) */
+@media (max-width: 1199px) {
+  .logo-icon {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small screens (768px to 991px) */
+@media (max-width: 991px) {
+  .logo-icon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .logo-text {
+    font-size: 1.3rem;
+  }
+  
+  .logo {
+    margin-right: 1.5rem;
+  }
+}
+
+/* Mobile screens (576px to 767px) */
+@media (max-width: 767px) {
+  .logo {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+  
+  .logo-icon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Extra small screens (up to 575px) */
+@media (max-width: 575px) {
+  .logo-icon {
+    width: 22px;
+    height: 22px;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+  }
+} 
